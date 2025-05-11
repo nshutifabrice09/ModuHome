@@ -25,8 +25,8 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
-    @ManyToOne
-    private User client;
+//    @ManyToOne
+//    private User client;
 
     @ManyToOne
     private Blueprint blueprint;
