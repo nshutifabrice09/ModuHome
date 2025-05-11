@@ -1,2 +1,9 @@
-package com.moduhomeweb.ModuHome.repository;public interface BuilderProfileRepository {
+package com.moduhomeweb.ModuHome.repository;
+
+import com.moduhomeweb.ModuHome.model.BuilderProfile;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BuilderProfileRepository extends JpaRepository <BuilderProfile, Long> {
 }
