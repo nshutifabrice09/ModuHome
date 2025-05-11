@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @Builder
 @Entity
-@Table(name = "blue_prints")
+@Table(name = "builder_profiles")
 @NoArgsConstructor
 @AllArgsConstructor
 
