@@ -23,7 +23,8 @@ public class BuilderProfile {
     private String description;
     private boolean isVerified;
 
-    @OneToOne(mappedBy = "user_id")
+    @OneToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
 
     @OneToMany(mappedBy = "builder")
