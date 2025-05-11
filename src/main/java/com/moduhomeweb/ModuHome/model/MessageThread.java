@@ -22,9 +22,9 @@ public class MessageThread {
     private boolean isRead;
     private LocalDateTime sentAt;
 
-//    @ManyToOne
-//    private User sender;
-//
-//    @ManyToOne
-//    private User receiver;
+    @ManyToOne
+    private User sender;
+
+    @ManyToOne
+    private User receiver;
 }

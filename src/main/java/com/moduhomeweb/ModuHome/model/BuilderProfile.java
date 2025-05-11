@@ -23,13 +23,13 @@ public class BuilderProfile {
     private String description;
     private boolean isVerified;
 
-//    @OneToOne(mappedBy = "user_id")
-//    private User user;
-//
-//    @OneToMany(mappedBy = "builder")
-//    private List<Review> reviews;
-//
-//    @OneToMany
-//    private List<ServiceArea> serviceAreas;
+    @OneToOne(mappedBy = "user_id")
+    private User user;
+
+    @OneToMany(mappedBy = "builder")
+    private List<Review> reviews;
+
+    @OneToMany
+    private List<ServiceArea> serviceAreas;
 }
 

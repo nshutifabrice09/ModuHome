@@ -30,9 +30,9 @@ public class Blueprint {
     private boolean isApproved;
     private LocalDateTime createdAt;
 
-//    @ManyToOne
-//    private User uploadedBy;
-//
-//    @ManyToMany
-//    private List<Tag> tags;
+    @ManyToOne
+    private User uploadedBy;
+
+    @ManyToMany
+    private List<Tag> tags;
 }

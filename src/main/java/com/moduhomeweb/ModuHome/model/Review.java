@@ -21,8 +21,8 @@ public class Review {
     private String comment;
     private LocalDateTime reviewDate;
 
-//    @ManyToOne
-//    private User reviewer;
+    @ManyToOne
+    private User reviewer;
 
     @ManyToOne
     private BuilderProfile builder;
