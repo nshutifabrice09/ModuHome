@@ -30,4 +30,60 @@ public class Project {
 
     @OneToMany(mappedBy = "project")
     private List<ProjectUpdate> updates;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(LocalDate startDate) {
+        this.startDate = startDate;
+    }
+
+    public LocalDate getExpectedCompletionDate() {
+        return expectedCompletionDate;
+    }
+
+    public void setExpectedCompletionDate(LocalDate expectedCompletionDate) {
+        this.expectedCompletionDate = expectedCompletionDate;
+    }
+
+    public String getProgressNotes() {
+        return progressNotes;
+    }
+
+    public void setProgressNotes(String progressNotes) {
+        this.progressNotes = progressNotes;
+    }
+
+    public ProjectStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ProjectStatus status) {
+        this.status = status;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+
+    public List<ProjectUpdate> getUpdates() {
+        return updates;
+    }
+
+    public void setUpdates(List<ProjectUpdate> updates) {
+        this.updates = updates;
+    }
 }
